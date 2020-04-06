@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styles.css">
+
+    <script src="jquery-slim-min.js"></script>
+    <link rel="shortcut icon" type="image/png" href="favicon.ico"/>
+
+    <script type="text/javascript">
+      $(document).ready(function() {
+
+          $(".btn").on("click", function() {
+            $("#picture").remove();
+            $("#thanks").show();
+          });
+
+        });
+
+
+    </script>
+
+
+  </head>
+
+<body>
+
+  <main>
+
+    <h1>COVID-19 Preventing</h1>
+    <h2>Placebo Image</h2>
+    <h3>Only for $1.99</h3>
+
+    <div class="btn">
+      <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+      <input type="hidden" name="cmd" value="_s-xclick" />
+      <input type="hidden" name="hosted_button_id" value="RCGLTQEU42ABW" />
+      <input id="magic-btn" type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
+      </form>
+
+    </div>
+
+
+    <div id="main-picture">
+      <img id="picture" src="path2.png">
+      <img id="thanks" src="covid19stop.png">
+    </div>
+
+
+  </main>
+
+</body>
+
+</html>
