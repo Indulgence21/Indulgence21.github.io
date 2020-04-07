@@ -4,7 +4,8 @@
     <meta charset="utf-8">
     <link rel="stylesheet" href="styles.css">
 
-    <script src="jquery-slim-min.js"></script>
+    <!-- <script src="jquery-slim-min.js"></script> -->
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <link rel="shortcut icon" type="image/png" href="favicon.ico"/>
 
     <script type="text/javascript">
@@ -12,7 +13,22 @@
 
           $(".btn").on("click", function() {
             $("#picture").remove();
-            $("#thanks").show();
+            $("#1").fadeIn( 500, function() {
+              $("#2").fadeIn( 750, function() {
+                $("#3").fadeIn( 1000, function() {
+                  $("#thanks").fadeIn( 1250 );
+                });
+              });
+
+            });
+
+
+
+
+            // $("#3").fadeIn( 3000 );
+            // $("#4").fadeIn( 4000 );
+            // $("#thanks").fadeIn( 1000 );
+            // $("#thanks").show();
           });
 
         });
@@ -32,9 +48,9 @@
     <h3>Only for $1.99</h3>
 
     <div class="btn">
-      <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+      <!-- <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
       <input type="hidden" name="cmd" value="_s-xclick" />
-      <input type="hidden" name="hosted_button_id" value="RCGLTQEU42ABW" />
+      <input type="hidden" name="hosted_button_id" value="RCGLTQEU42ABW" /> -->
       <input id="magic-btn" type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
       </form>
 
@@ -43,6 +59,14 @@
 
     <div id="main-picture">
       <img id="picture" src="path2.png">
+
+      <div class="ty">
+        <p id="1">HERE</p>
+        <p id="2">IT</p>
+        <p id="3">IS</p>
+        <p id="4">THANKS!</p>
+      </div>
+
       <img id="thanks" src="covid19stop.png">
     </div>
 

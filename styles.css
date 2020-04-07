@@ -62,3 +62,18 @@ h3{
 button{
   font-size: 16px;
 }
+
+p{
+	display: none;
+	text-align: center;
+	font-size: 32px;
+	padding-right: 40px;
+	padding-left: 40px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	font-weight: 600;
+}
+
+/* .ty{
+	width:auto;
+} */
